@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public static int answer(int a, int b, int c) {
-        if(a < b && a < c) {
+        if(a <= b && a <= c) {
           return a;  
         }
-        else if(b < a && b < c) {
+        else if(b <= a && b <= c) {
             return b;
         }
-        else if(c < a && c < b) {
+        else if(c <= a && c <= b) {
             return c;
         }
         return 0;
